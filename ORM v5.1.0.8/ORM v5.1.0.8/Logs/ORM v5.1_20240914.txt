@@ -1,0 +1,631 @@
+14/09/2024 10:58:45 a. m. 
+----------------------------------------------------------
+Machine Name: L-CRUZ-J
+   User Name: JoseDanielCruzPerdom
+----------------------------------------------------------
+Error al recuperar Historial de Resultados de esta Consulta almacenados en la BD
+Mensaje de Error: ORA-12570: Sesión de Red: error de lectura de paquete inesperado 
+Origen: Oracle Data Provider for .NET, Managed Driver [HandleError en Oracle.ManagedDataAccess.dll]
+
+Excepción
+-----------------------------------------------------------------
+Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-12570: Sesión de Red: error de lectura de paquete inesperado ---> OracleInternal.Network.NetworkException (0x80004005): ORA-12570: Sesión de Red: error de lectura de paquete inesperado ---> OracleInternal.Network.NetworkException (0x80004005): ORA-12570: Sesión de Red: error de lectura de paquete inesperado ---> System.Net.Sockets.SocketException (0x80004005): Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder
+   en OracleInternal.Network.ReaderStream.ReadIt(OraBuf OB, Int32 len)
+   en OracleInternal.Network.ReaderStream.ReadIt(OraBuf OB, Int32 len)
+   en OracleInternal.Network.ReaderStream.ReadwithCrypto(OraBuf OB)
+   en OracleInternal.Network.ReaderStream.ReadwithCrypto(OraBuf OB)
+   en OracleInternal.Network.ReaderStream.Read(OraBuf OB)
+   en OracleInternal.TTC.OraBufReader.GetDataFromNetwork()
+   en OracleInternal.TTC.OraBufReader.Read(Boolean bIgnoreData)
+   en OracleInternal.TTC.TTCExecuteSql.ReceiveExecuteResponse(Accessor[]& defineAccessors, Accessor[] bindAccessors, Boolean bHasReturningParams, SQLMetaData& sqlMetaData, SqlStatementType statementType, Int64 noOfRowsFetchedLastTime, Int32 noOfRowsToFetch, Int32& noOfRowsFetched, Int64& queryId, Int32 longFetchSize, Int64 initialLOBFetchSize, Int64[] scnFromExecution, Boolean bAllInputBinds, Int32 arrayBindCount, DataUnmarshaller& dataUnmarshaller, MarshalBindParameterValueHelper& marshalBindParamsHelper, Int64[]& rowsAffectedByArrayBind, Boolean bDefineDone, Boolean& bMoreThanOneRowAffectedByDmlWithRetClause, List`1& implicitRSList, Boolean bLOBArrayFetchRequired)
+   en Oracle.ManagedDataAccess.Client.OracleException.HandleError(OracleTraceLevel level, OracleTraceTag tag, Exception ex, OracleLogicalTransaction oracleLogicalTransaction)
+   en OracleInternal.TTC.TTCExecuteSql.ReceiveExecuteResponse(Accessor[]& defineAccessors, Accessor[] bindAccessors, Boolean bHasReturningParams, SQLMetaData& sqlMetaData, SqlStatementType statementType, Int64 noOfRowsFetchedLastTime, Int32 noOfRowsToFetch, Int32& noOfRowsFetched, Int64& queryId, Int32 longFetchSize, Int64 initialLOBFetchSize, Int64[] scnFromExecution, Boolean bAllInputBinds, Int32 arrayBindCount, DataUnmarshaller& dataUnmarshaller, MarshalBindParameterValueHelper& marshalBindParamsHelper, Int64[]& rowsAffectedByArrayBind, Boolean bDefineDone, Boolean& bMoreThanOneRowAffectedByDmlWithRetClause, List`1& implicitRSList, Boolean bLOBArrayFetchRequired)
+   en OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   en Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   en Oracle.ManagedDataAccess.Client.OracleDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   en ORM.Formas.frmConsulta.VerEjecuciones()
+
+
+
+************************************************
+************************************************
+ Inner Exception : No.1 
+************************************************
+==================================================
+ Error Message : ORA-12570: Sesión de Red: error de lectura de paquete inesperado 
+==================================================
+==================================================
+ Data parameters Count at Source :0
+==================================================
+==================================================
+ Source : Oracle Data Provider for .NET, Managed Driver 
+==================================================
+ StackTrace :    en Oracle.ManagedDataAccess.Client.OracleException.HandleError(OracleTraceLevel level, OracleTraceTag tag, Exception ex, OracleLogicalTransaction oracleLogicalTransaction)
+   en OracleInternal.TTC.TTCExecuteSql.ReceiveExecuteResponse(Accessor[]& defineAccessors, Accessor[] bindAccessors, Boolean bHasReturningParams, SQLMetaData& sqlMetaData, SqlStatementType statementType, Int64 noOfRowsFetchedLastTime, Int32 noOfRowsToFetch, Int32& noOfRowsFetched, Int64& queryId, Int32 longFetchSize, Int64 initialLOBFetchSize, Int64[] scnFromExecution, Boolean bAllInputBinds, Int32 arrayBindCount, DataUnmarshaller& dataUnmarshaller, MarshalBindParameterValueHelper& marshalBindParamsHelper, Int64[]& rowsAffectedByArrayBind, Boolean bDefineDone, Boolean& bMoreThanOneRowAffectedByDmlWithRetClause, List`1& implicitRSList, Boolean bLOBArrayFetchRequired)
+   en OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   en Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   en Oracle.ManagedDataAccess.Client.OracleDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   en ORM.Formas.frmConsulta.VerEjecuciones() 
+==================================================
+ TargetSite : Void HandleError(OracleInternal.Common.OracleTraceLevel, OracleInternal.Common.OracleTraceTag, System.Exception, Oracle.ManagedDataAccess.Client.OracleLogicalTransaction) 
+************************************************
+ Finished Writting Exception info :1 
+************************************************
+************************************************
+
+
+
+
+************************************************
+************************************************
+ Inner Exception : No.2 
+************************************************
+==================================================
+ Error Message : ORA-12570: Sesión de Red: error de lectura de paquete inesperado 
+==================================================
+==================================================
+ Data parameters Count at Source :0
+==================================================
+==================================================
+ Source : Oracle.ManagedDataAccess 
+==================================================
+ StackTrace :    en OracleInternal.Network.ReaderStream.ReadwithCrypto(OraBuf OB)
+   en OracleInternal.Network.ReaderStream.Read(OraBuf OB)
+   en OracleInternal.TTC.OraBufReader.GetDataFromNetwork()
+   en OracleInternal.TTC.OraBufReader.Read(Boolean bIgnoreData)
+   en OracleInternal.TTC.TTCExecuteSql.ReceiveExecuteResponse(Accessor[]& defineAccessors, Accessor[] bindAccessors, Boolean bHasReturningParams, SQLMetaData& sqlMetaData, SqlStatementType statementType, Int64 noOfRowsFetchedLastTime, Int32 noOfRowsToFetch, Int32& noOfRowsFetched, Int64& queryId, Int32 longFetchSize, Int64 initialLOBFetchSize, Int64[] scnFromExecution, Boolean bAllInputBinds, Int32 arrayBindCount, DataUnmarshaller& dataUnmarshaller, MarshalBindParameterValueHelper& marshalBindParamsHelper, Int64[]& rowsAffectedByArrayBind, Boolean bDefineDone, Boolean& bMoreThanOneRowAffectedByDmlWithRetClause, List`1& implicitRSList, Boolean bLOBArrayFetchRequired) 
+==================================================
+ TargetSite : Int32 ReadwithCrypto(OracleInternal.Network.OraBuf) 
+************************************************
+ Finished Writting Exception info :2 
+************************************************
+************************************************
+
+
+
+
+************************************************
+************************************************
+ Inner Exception : No.3 
+************************************************
+==================================================
+ Error Message : ORA-12570: Sesión de Red: error de lectura de paquete inesperado 
+==================================================
+==================================================
+ Data parameters Count at Source :0
+==================================================
+==================================================
+ Source : Oracle.ManagedDataAccess 
+==================================================
+ StackTrace :    en OracleInternal.Network.ReaderStream.ReadIt(OraBuf OB, Int32 len)
+   en OracleInternal.Network.ReaderStream.ReadwithCrypto(OraBuf OB) 
+==================================================
+ TargetSite : Void ReadIt(OracleInternal.Network.OraBuf, Int32) 
+************************************************
+ Finished Writting Exception info :3 
+************************************************
+************************************************
+
+
+
+
+************************************************
+************************************************
+ Inner Exception : No.4 
+************************************************
+==================================================
+ Error Message : Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder 
+==================================================
+==================================================
+ Data parameters Count at Source :0
+==================================================
+==================================================
+ Source : Oracle.ManagedDataAccess 
+==================================================
+ StackTrace :    en OracleInternal.Network.ReaderStream.ReadIt(OraBuf OB, Int32 len) 
+==================================================
+ TargetSite : Void ReadIt(OracleInternal.Network.OraBuf, Int32) 
+************************************************
+ Finished Writting Exception info :4 
+************************************************
+************************************************
+
+
+14/09/2024 10:58:50 a. m. 
+----------------------------------------------------------
+Machine Name: L-CRUZ-J
+   User Name: JoseDanielCruzPerdom
+----------------------------------------------------------
+Error al recuperar Historial de Resultados de esta Consulta almacenados en la BD
+Mensaje de Error: Se ha encontrado un error ORA-12571 de Oracle 
+Origen: Oracle Data Provider for .NET, Managed Driver [HandleError en Oracle.ManagedDataAccess.dll]
+
+Excepción
+-----------------------------------------------------------------
+Oracle.ManagedDataAccess.Client.OracleException (0x80004005): Se ha encontrado un error ORA-12571 de Oracle ---> OracleInternal.Network.NetworkException (0x80004005): Se ha encontrado un error ORA-12571 de Oracle ---> System.Net.Sockets.SocketException (0x80004005): Se ha forzado la interrupción de una conexión existente por el host remoto
+   en OracleInternal.Network.TcpTransportAdapter.Send(OraBuf OB)
+   en OracleInternal.Network.TcpTransportAdapter.Send(OraBuf OB)
+   en OracleInternal.Network.WriterStream.Write(OraBuf OB)
+   en OracleInternal.TTC.OraBufWriter.FlushData()
+   en OracleInternal.TTC.TTCExecuteSql.WriteOall8Message(Byte[] sqlStmtByteStream, Int32 cursorId, Int64 dbChangeRegistrationId, Int64 executeOptions, ColumnDescribeInfo[] colDefinesInfoArray, Int32 longFetchSize, Int32 arrayBindCount, Int32 numDefineCols, Int64 noOfRowsToFetch, SqlStatementType stmtType, MarshalBindParameterValueHelper& marshalBindParamsHelper, Int32 startIndex)
+   en Oracle.ManagedDataAccess.Client.OracleException.HandleError(OracleTraceLevel level, OracleTraceTag tag, Exception ex, OracleLogicalTransaction oracleLogicalTransaction)
+   en OracleInternal.TTC.TTCExecuteSql.WriteOall8Message(Byte[] sqlStmtByteStream, Int32 cursorId, Int64 dbChangeRegistrationId, Int64 executeOptions, ColumnDescribeInfo[] colDefinesInfoArray, Int32 longFetchSize, Int32 arrayBindCount, Int32 numDefineCols, Int64 noOfRowsToFetch, SqlStatementType stmtType, MarshalBindParameterValueHelper& marshalBindParamsHelper, Int32 startIndex)
+   en OracleInternal.TTC.TTCExecuteSql.SendExecuteRequest(OracleConnectionImpl commImpl, Byte[] sqlStmtByteStream, Boolean bHasReturningClause, Int32 cursorId, Int64 dbChangeRegistrationId, ColumnDescribeInfo[] columnDefines, Int64 noOfRowsToFetch, Boolean parse, Boolean execute, Boolean fetch, Boolean define, Boolean bAutoCommit, Boolean bDisableCompressedFetch, SqlStatementType stmtType, Int32 longFetchSize, Int32 arrayBindCount, Int64[] scnForSnapshot, MarshalBindParameterValueHelper& marshalBindParamsHelper, Int32 startIndex)
+   en OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   en Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   en Oracle.ManagedDataAccess.Client.OracleDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   en ORM.Formas.frmConsulta.VerEjecuciones()
+
+
+
+************************************************
+************************************************
+ Inner Exception : No.1 
+************************************************
+==================================================
+ Error Message : Se ha encontrado un error ORA-12571 de Oracle 
+==================================================
+==================================================
+ Data parameters Count at Source :0
+==================================================
+==================================================
+ Source : Oracle Data Provider for .NET, Managed Driver 
+==================================================
+ StackTrace :    en Oracle.ManagedDataAccess.Client.OracleException.HandleError(OracleTraceLevel level, OracleTraceTag tag, Exception ex, OracleLogicalTransaction oracleLogicalTransaction)
+   en OracleInternal.TTC.TTCExecuteSql.WriteOall8Message(Byte[] sqlStmtByteStream, Int32 cursorId, Int64 dbChangeRegistrationId, Int64 executeOptions, ColumnDescribeInfo[] colDefinesInfoArray, Int32 longFetchSize, Int32 arrayBindCount, Int32 numDefineCols, Int64 noOfRowsToFetch, SqlStatementType stmtType, MarshalBindParameterValueHelper& marshalBindParamsHelper, Int32 startIndex)
+   en OracleInternal.TTC.TTCExecuteSql.SendExecuteRequest(OracleConnectionImpl commImpl, Byte[] sqlStmtByteStream, Boolean bHasReturningClause, Int32 cursorId, Int64 dbChangeRegistrationId, ColumnDescribeInfo[] columnDefines, Int64 noOfRowsToFetch, Boolean parse, Boolean execute, Boolean fetch, Boolean define, Boolean bAutoCommit, Boolean bDisableCompressedFetch, SqlStatementType stmtType, Int32 longFetchSize, Int32 arrayBindCount, Int64[] scnForSnapshot, MarshalBindParameterValueHelper& marshalBindParamsHelper, Int32 startIndex)
+   en OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   en Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   en Oracle.ManagedDataAccess.Client.OracleDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   en ORM.Formas.frmConsulta.VerEjecuciones() 
+==================================================
+ TargetSite : Void HandleError(OracleInternal.Common.OracleTraceLevel, OracleInternal.Common.OracleTraceTag, System.Exception, Oracle.ManagedDataAccess.Client.OracleLogicalTransaction) 
+************************************************
+ Finished Writting Exception info :1 
+************************************************
+************************************************
+
+
+
+
+************************************************
+************************************************
+ Inner Exception : No.2 
+************************************************
+==================================================
+ Error Message : Se ha encontrado un error ORA-12571 de Oracle 
+==================================================
+==================================================
+ Data parameters Count at Source :0
+==================================================
+==================================================
+ Source : Oracle.ManagedDataAccess 
+==================================================
+ StackTrace :    en OracleInternal.Network.TcpTransportAdapter.Send(OraBuf OB)
+   en OracleInternal.Network.WriterStream.Write(OraBuf OB)
+   en OracleInternal.TTC.OraBufWriter.FlushData()
+   en OracleInternal.TTC.TTCExecuteSql.WriteOall8Message(Byte[] sqlStmtByteStream, Int32 cursorId, Int64 dbChangeRegistrationId, Int64 executeOptions, ColumnDescribeInfo[] colDefinesInfoArray, Int32 longFetchSize, Int32 arrayBindCount, Int32 numDefineCols, Int64 noOfRowsToFetch, SqlStatementType stmtType, MarshalBindParameterValueHelper& marshalBindParamsHelper, Int32 startIndex) 
+==================================================
+ TargetSite : Void Send(OracleInternal.Network.OraBuf) 
+************************************************
+ Finished Writting Exception info :2 
+************************************************
+************************************************
+
+
+
+
+************************************************
+************************************************
+ Inner Exception : No.3 
+************************************************
+==================================================
+ Error Message : Se ha forzado la interrupción de una conexión existente por el host remoto 
+==================================================
+==================================================
+ Data parameters Count at Source :0
+==================================================
+==================================================
+ Source : Oracle.ManagedDataAccess 
+==================================================
+ StackTrace :    en OracleInternal.Network.TcpTransportAdapter.Send(OraBuf OB) 
+==================================================
+ TargetSite : Void Send(OracleInternal.Network.OraBuf) 
+************************************************
+ Finished Writting Exception info :3 
+************************************************
+************************************************
+
+
+14/09/2024 11:01:03 a. m. 
+----------------------------------------------------------
+Machine Name: L-CRUZ-J
+   User Name: JoseDanielCruzPerdom
+----------------------------------------------------------
+Error al recuperar Historial de Resultados de esta Consulta almacenados en la BD
+Mensaje de Error: Se ha encontrado un error ORA-12571 de Oracle 
+Origen: Oracle Data Provider for .NET, Managed Driver [HandleError en Oracle.ManagedDataAccess.dll]
+
+Excepción
+-----------------------------------------------------------------
+Oracle.ManagedDataAccess.Client.OracleException (0x80004005): Se ha encontrado un error ORA-12571 de Oracle ---> OracleInternal.Network.NetworkException (0x80004005): Se ha encontrado un error ORA-12571 de Oracle ---> System.Net.Sockets.SocketException (0x80004005): Se ha forzado la interrupción de una conexión existente por el host remoto
+   en OracleInternal.Network.TcpTransportAdapter.Send(OraBuf OB)
+   en OracleInternal.Network.TcpTransportAdapter.Send(OraBuf OB)
+   en OracleInternal.Network.WriterStream.Write(OraBuf OB)
+   en OracleInternal.TTC.OraBufWriter.FlushData()
+   en OracleInternal.TTC.TTCExecuteSql.WriteOall8Message(Byte[] sqlStmtByteStream, Int32 cursorId, Int64 dbChangeRegistrationId, Int64 executeOptions, ColumnDescribeInfo[] colDefinesInfoArray, Int32 longFetchSize, Int32 arrayBindCount, Int32 numDefineCols, Int64 noOfRowsToFetch, SqlStatementType stmtType, MarshalBindParameterValueHelper& marshalBindParamsHelper, Int32 startIndex)
+   en Oracle.ManagedDataAccess.Client.OracleException.HandleError(OracleTraceLevel level, OracleTraceTag tag, Exception ex, OracleLogicalTransaction oracleLogicalTransaction)
+   en OracleInternal.TTC.TTCExecuteSql.WriteOall8Message(Byte[] sqlStmtByteStream, Int32 cursorId, Int64 dbChangeRegistrationId, Int64 executeOptions, ColumnDescribeInfo[] colDefinesInfoArray, Int32 longFetchSize, Int32 arrayBindCount, Int32 numDefineCols, Int64 noOfRowsToFetch, SqlStatementType stmtType, MarshalBindParameterValueHelper& marshalBindParamsHelper, Int32 startIndex)
+   en OracleInternal.TTC.TTCExecuteSql.SendExecuteRequest(OracleConnectionImpl commImpl, Byte[] sqlStmtByteStream, Boolean bHasReturningClause, Int32 cursorId, Int64 dbChangeRegistrationId, ColumnDescribeInfo[] columnDefines, Int64 noOfRowsToFetch, Boolean parse, Boolean execute, Boolean fetch, Boolean define, Boolean bAutoCommit, Boolean bDisableCompressedFetch, SqlStatementType stmtType, Int32 longFetchSize, Int32 arrayBindCount, Int64[] scnForSnapshot, MarshalBindParameterValueHelper& marshalBindParamsHelper, Int32 startIndex)
+   en OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   en Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   en Oracle.ManagedDataAccess.Client.OracleDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   en ORM.Formas.frmConsulta.VerEjecuciones()
+
+
+
+************************************************
+************************************************
+ Inner Exception : No.1 
+************************************************
+==================================================
+ Error Message : Se ha encontrado un error ORA-12571 de Oracle 
+==================================================
+==================================================
+ Data parameters Count at Source :0
+==================================================
+==================================================
+ Source : Oracle Data Provider for .NET, Managed Driver 
+==================================================
+ StackTrace :    en Oracle.ManagedDataAccess.Client.OracleException.HandleError(OracleTraceLevel level, OracleTraceTag tag, Exception ex, OracleLogicalTransaction oracleLogicalTransaction)
+   en OracleInternal.TTC.TTCExecuteSql.WriteOall8Message(Byte[] sqlStmtByteStream, Int32 cursorId, Int64 dbChangeRegistrationId, Int64 executeOptions, ColumnDescribeInfo[] colDefinesInfoArray, Int32 longFetchSize, Int32 arrayBindCount, Int32 numDefineCols, Int64 noOfRowsToFetch, SqlStatementType stmtType, MarshalBindParameterValueHelper& marshalBindParamsHelper, Int32 startIndex)
+   en OracleInternal.TTC.TTCExecuteSql.SendExecuteRequest(OracleConnectionImpl commImpl, Byte[] sqlStmtByteStream, Boolean bHasReturningClause, Int32 cursorId, Int64 dbChangeRegistrationId, ColumnDescribeInfo[] columnDefines, Int64 noOfRowsToFetch, Boolean parse, Boolean execute, Boolean fetch, Boolean define, Boolean bAutoCommit, Boolean bDisableCompressedFetch, SqlStatementType stmtType, Int32 longFetchSize, Int32 arrayBindCount, Int64[] scnForSnapshot, MarshalBindParameterValueHelper& marshalBindParamsHelper, Int32 startIndex)
+   en OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   en Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   en Oracle.ManagedDataAccess.Client.OracleDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   en ORM.Formas.frmConsulta.VerEjecuciones() 
+==================================================
+ TargetSite : Void HandleError(OracleInternal.Common.OracleTraceLevel, OracleInternal.Common.OracleTraceTag, System.Exception, Oracle.ManagedDataAccess.Client.OracleLogicalTransaction) 
+************************************************
+ Finished Writting Exception info :1 
+************************************************
+************************************************
+
+
+
+
+************************************************
+************************************************
+ Inner Exception : No.2 
+************************************************
+==================================================
+ Error Message : Se ha encontrado un error ORA-12571 de Oracle 
+==================================================
+==================================================
+ Data parameters Count at Source :0
+==================================================
+==================================================
+ Source : Oracle.ManagedDataAccess 
+==================================================
+ StackTrace :    en OracleInternal.Network.TcpTransportAdapter.Send(OraBuf OB)
+   en OracleInternal.Network.WriterStream.Write(OraBuf OB)
+   en OracleInternal.TTC.OraBufWriter.FlushData()
+   en OracleInternal.TTC.TTCExecuteSql.WriteOall8Message(Byte[] sqlStmtByteStream, Int32 cursorId, Int64 dbChangeRegistrationId, Int64 executeOptions, ColumnDescribeInfo[] colDefinesInfoArray, Int32 longFetchSize, Int32 arrayBindCount, Int32 numDefineCols, Int64 noOfRowsToFetch, SqlStatementType stmtType, MarshalBindParameterValueHelper& marshalBindParamsHelper, Int32 startIndex) 
+==================================================
+ TargetSite : Void Send(OracleInternal.Network.OraBuf) 
+************************************************
+ Finished Writting Exception info :2 
+************************************************
+************************************************
+
+
+
+
+************************************************
+************************************************
+ Inner Exception : No.3 
+************************************************
+==================================================
+ Error Message : Se ha forzado la interrupción de una conexión existente por el host remoto 
+==================================================
+==================================================
+ Data parameters Count at Source :0
+==================================================
+==================================================
+ Source : Oracle.ManagedDataAccess 
+==================================================
+ StackTrace :    en OracleInternal.Network.TcpTransportAdapter.Send(OraBuf OB) 
+==================================================
+ TargetSite : Void Send(OracleInternal.Network.OraBuf) 
+************************************************
+ Finished Writting Exception info :3 
+************************************************
+************************************************
+
+
+14/09/2024 11:21:41 a. m. 
+----------------------------------------------------------
+Machine Name: L-CRUZ-J
+   User Name: JoseDanielCruzPerdom
+----------------------------------------------------------
+Error al recuperar Historial de Resultados de esta Consulta almacenados en la BD
+Mensaje de Error: ORA-12570: Sesión de Red: error de lectura de paquete inesperado 
+Origen: Oracle Data Provider for .NET, Managed Driver [HandleError en Oracle.ManagedDataAccess.dll]
+
+Excepción
+-----------------------------------------------------------------
+Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-12570: Sesión de Red: error de lectura de paquete inesperado ---> OracleInternal.Network.NetworkException (0x80004005): ORA-12570: Sesión de Red: error de lectura de paquete inesperado ---> OracleInternal.Network.NetworkException (0x80004005): ORA-12570: Sesión de Red: error de lectura de paquete inesperado ---> System.Net.Sockets.SocketException (0x80004005): Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder
+   en OracleInternal.Network.ReaderStream.ReadIt(OraBuf OB, Int32 len)
+   en OracleInternal.Network.ReaderStream.ReadIt(OraBuf OB, Int32 len)
+   en OracleInternal.Network.ReaderStream.ReadwithCrypto(OraBuf OB)
+   en OracleInternal.Network.ReaderStream.ReadwithCrypto(OraBuf OB)
+   en OracleInternal.Network.ReaderStream.Read(OraBuf OB)
+   en OracleInternal.TTC.OraBufReader.GetDataFromNetwork()
+   en OracleInternal.TTC.OraBufReader.Read(Boolean bIgnoreData)
+   en OracleInternal.TTC.TTCExecuteSql.ReceiveExecuteResponse(Accessor[]& defineAccessors, Accessor[] bindAccessors, Boolean bHasReturningParams, SQLMetaData& sqlMetaData, SqlStatementType statementType, Int64 noOfRowsFetchedLastTime, Int32 noOfRowsToFetch, Int32& noOfRowsFetched, Int64& queryId, Int32 longFetchSize, Int64 initialLOBFetchSize, Int64[] scnFromExecution, Boolean bAllInputBinds, Int32 arrayBindCount, DataUnmarshaller& dataUnmarshaller, MarshalBindParameterValueHelper& marshalBindParamsHelper, Int64[]& rowsAffectedByArrayBind, Boolean bDefineDone, Boolean& bMoreThanOneRowAffectedByDmlWithRetClause, List`1& implicitRSList, Boolean bLOBArrayFetchRequired)
+   en Oracle.ManagedDataAccess.Client.OracleException.HandleError(OracleTraceLevel level, OracleTraceTag tag, Exception ex, OracleLogicalTransaction oracleLogicalTransaction)
+   en OracleInternal.TTC.TTCExecuteSql.ReceiveExecuteResponse(Accessor[]& defineAccessors, Accessor[] bindAccessors, Boolean bHasReturningParams, SQLMetaData& sqlMetaData, SqlStatementType statementType, Int64 noOfRowsFetchedLastTime, Int32 noOfRowsToFetch, Int32& noOfRowsFetched, Int64& queryId, Int32 longFetchSize, Int64 initialLOBFetchSize, Int64[] scnFromExecution, Boolean bAllInputBinds, Int32 arrayBindCount, DataUnmarshaller& dataUnmarshaller, MarshalBindParameterValueHelper& marshalBindParamsHelper, Int64[]& rowsAffectedByArrayBind, Boolean bDefineDone, Boolean& bMoreThanOneRowAffectedByDmlWithRetClause, List`1& implicitRSList, Boolean bLOBArrayFetchRequired)
+   en OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   en Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   en Oracle.ManagedDataAccess.Client.OracleDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   en ORM.Formas.frmConsulta.VerEjecuciones()
+
+
+
+************************************************
+************************************************
+ Inner Exception : No.1 
+************************************************
+==================================================
+ Error Message : ORA-12570: Sesión de Red: error de lectura de paquete inesperado 
+==================================================
+==================================================
+ Data parameters Count at Source :0
+==================================================
+==================================================
+ Source : Oracle Data Provider for .NET, Managed Driver 
+==================================================
+ StackTrace :    en Oracle.ManagedDataAccess.Client.OracleException.HandleError(OracleTraceLevel level, OracleTraceTag tag, Exception ex, OracleLogicalTransaction oracleLogicalTransaction)
+   en OracleInternal.TTC.TTCExecuteSql.ReceiveExecuteResponse(Accessor[]& defineAccessors, Accessor[] bindAccessors, Boolean bHasReturningParams, SQLMetaData& sqlMetaData, SqlStatementType statementType, Int64 noOfRowsFetchedLastTime, Int32 noOfRowsToFetch, Int32& noOfRowsFetched, Int64& queryId, Int32 longFetchSize, Int64 initialLOBFetchSize, Int64[] scnFromExecution, Boolean bAllInputBinds, Int32 arrayBindCount, DataUnmarshaller& dataUnmarshaller, MarshalBindParameterValueHelper& marshalBindParamsHelper, Int64[]& rowsAffectedByArrayBind, Boolean bDefineDone, Boolean& bMoreThanOneRowAffectedByDmlWithRetClause, List`1& implicitRSList, Boolean bLOBArrayFetchRequired)
+   en OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   en Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   en Oracle.ManagedDataAccess.Client.OracleDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   en ORM.Formas.frmConsulta.VerEjecuciones() 
+==================================================
+ TargetSite : Void HandleError(OracleInternal.Common.OracleTraceLevel, OracleInternal.Common.OracleTraceTag, System.Exception, Oracle.ManagedDataAccess.Client.OracleLogicalTransaction) 
+************************************************
+ Finished Writting Exception info :1 
+************************************************
+************************************************
+
+
+
+
+************************************************
+************************************************
+ Inner Exception : No.2 
+************************************************
+==================================================
+ Error Message : ORA-12570: Sesión de Red: error de lectura de paquete inesperado 
+==================================================
+==================================================
+ Data parameters Count at Source :0
+==================================================
+==================================================
+ Source : Oracle.ManagedDataAccess 
+==================================================
+ StackTrace :    en OracleInternal.Network.ReaderStream.ReadwithCrypto(OraBuf OB)
+   en OracleInternal.Network.ReaderStream.Read(OraBuf OB)
+   en OracleInternal.TTC.OraBufReader.GetDataFromNetwork()
+   en OracleInternal.TTC.OraBufReader.Read(Boolean bIgnoreData)
+   en OracleInternal.TTC.TTCExecuteSql.ReceiveExecuteResponse(Accessor[]& defineAccessors, Accessor[] bindAccessors, Boolean bHasReturningParams, SQLMetaData& sqlMetaData, SqlStatementType statementType, Int64 noOfRowsFetchedLastTime, Int32 noOfRowsToFetch, Int32& noOfRowsFetched, Int64& queryId, Int32 longFetchSize, Int64 initialLOBFetchSize, Int64[] scnFromExecution, Boolean bAllInputBinds, Int32 arrayBindCount, DataUnmarshaller& dataUnmarshaller, MarshalBindParameterValueHelper& marshalBindParamsHelper, Int64[]& rowsAffectedByArrayBind, Boolean bDefineDone, Boolean& bMoreThanOneRowAffectedByDmlWithRetClause, List`1& implicitRSList, Boolean bLOBArrayFetchRequired) 
+==================================================
+ TargetSite : Int32 ReadwithCrypto(OracleInternal.Network.OraBuf) 
+************************************************
+ Finished Writting Exception info :2 
+************************************************
+************************************************
+
+
+
+
+************************************************
+************************************************
+ Inner Exception : No.3 
+************************************************
+==================================================
+ Error Message : ORA-12570: Sesión de Red: error de lectura de paquete inesperado 
+==================================================
+==================================================
+ Data parameters Count at Source :0
+==================================================
+==================================================
+ Source : Oracle.ManagedDataAccess 
+==================================================
+ StackTrace :    en OracleInternal.Network.ReaderStream.ReadIt(OraBuf OB, Int32 len)
+   en OracleInternal.Network.ReaderStream.ReadwithCrypto(OraBuf OB) 
+==================================================
+ TargetSite : Void ReadIt(OracleInternal.Network.OraBuf, Int32) 
+************************************************
+ Finished Writting Exception info :3 
+************************************************
+************************************************
+
+
+
+
+************************************************
+************************************************
+ Inner Exception : No.4 
+************************************************
+==================================================
+ Error Message : Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder 
+==================================================
+==================================================
+ Data parameters Count at Source :0
+==================================================
+==================================================
+ Source : Oracle.ManagedDataAccess 
+==================================================
+ StackTrace :    en OracleInternal.Network.ReaderStream.ReadIt(OraBuf OB, Int32 len) 
+==================================================
+ TargetSite : Void ReadIt(OracleInternal.Network.OraBuf, Int32) 
+************************************************
+ Finished Writting Exception info :4 
+************************************************
+************************************************
+
+
+14/09/2024 11:26:28 a. m. 
+----------------------------------------------------------
+Machine Name: L-CRUZ-J
+   User Name: JoseDanielCruzPerdom
+----------------------------------------------------------
+Error al recuperar Historial de Resultados de esta Consulta almacenados en la BD
+Mensaje de Error: Se ha encontrado un error ORA-12571 de Oracle 
+Origen: Oracle Data Provider for .NET, Managed Driver [HandleError en Oracle.ManagedDataAccess.dll]
+
+Excepción
+-----------------------------------------------------------------
+Oracle.ManagedDataAccess.Client.OracleException (0x80004005): Se ha encontrado un error ORA-12571 de Oracle ---> OracleInternal.Network.NetworkException (0x80004005): Se ha encontrado un error ORA-12571 de Oracle ---> System.Net.Sockets.SocketException (0x80004005): Se ha forzado la interrupción de una conexión existente por el host remoto
+   en OracleInternal.Network.TcpTransportAdapter.Send(OraBuf OB)
+   en OracleInternal.Network.TcpTransportAdapter.Send(OraBuf OB)
+   en OracleInternal.Network.WriterStream.Write(OraBuf OB)
+   en OracleInternal.TTC.OraBufWriter.FlushData()
+   en OracleInternal.TTC.TTCExecuteSql.WriteOall8Message(Byte[] sqlStmtByteStream, Int32 cursorId, Int64 dbChangeRegistrationId, Int64 executeOptions, ColumnDescribeInfo[] colDefinesInfoArray, Int32 longFetchSize, Int32 arrayBindCount, Int32 numDefineCols, Int64 noOfRowsToFetch, SqlStatementType stmtType, MarshalBindParameterValueHelper& marshalBindParamsHelper, Int32 startIndex)
+   en Oracle.ManagedDataAccess.Client.OracleException.HandleError(OracleTraceLevel level, OracleTraceTag tag, Exception ex, OracleLogicalTransaction oracleLogicalTransaction)
+   en OracleInternal.TTC.TTCExecuteSql.WriteOall8Message(Byte[] sqlStmtByteStream, Int32 cursorId, Int64 dbChangeRegistrationId, Int64 executeOptions, ColumnDescribeInfo[] colDefinesInfoArray, Int32 longFetchSize, Int32 arrayBindCount, Int32 numDefineCols, Int64 noOfRowsToFetch, SqlStatementType stmtType, MarshalBindParameterValueHelper& marshalBindParamsHelper, Int32 startIndex)
+   en OracleInternal.TTC.TTCExecuteSql.SendExecuteRequest(OracleConnectionImpl commImpl, Byte[] sqlStmtByteStream, Boolean bHasReturningClause, Int32 cursorId, Int64 dbChangeRegistrationId, ColumnDescribeInfo[] columnDefines, Int64 noOfRowsToFetch, Boolean parse, Boolean execute, Boolean fetch, Boolean define, Boolean bAutoCommit, Boolean bDisableCompressedFetch, SqlStatementType stmtType, Int32 longFetchSize, Int32 arrayBindCount, Int64[] scnForSnapshot, MarshalBindParameterValueHelper& marshalBindParamsHelper, Int32 startIndex)
+   en OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   en Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   en Oracle.ManagedDataAccess.Client.OracleDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   en ORM.Formas.frmConsulta.VerEjecuciones()
+
+
+
+************************************************
+************************************************
+ Inner Exception : No.1 
+************************************************
+==================================================
+ Error Message : Se ha encontrado un error ORA-12571 de Oracle 
+==================================================
+==================================================
+ Data parameters Count at Source :0
+==================================================
+==================================================
+ Source : Oracle Data Provider for .NET, Managed Driver 
+==================================================
+ StackTrace :    en Oracle.ManagedDataAccess.Client.OracleException.HandleError(OracleTraceLevel level, OracleTraceTag tag, Exception ex, OracleLogicalTransaction oracleLogicalTransaction)
+   en OracleInternal.TTC.TTCExecuteSql.WriteOall8Message(Byte[] sqlStmtByteStream, Int32 cursorId, Int64 dbChangeRegistrationId, Int64 executeOptions, ColumnDescribeInfo[] colDefinesInfoArray, Int32 longFetchSize, Int32 arrayBindCount, Int32 numDefineCols, Int64 noOfRowsToFetch, SqlStatementType stmtType, MarshalBindParameterValueHelper& marshalBindParamsHelper, Int32 startIndex)
+   en OracleInternal.TTC.TTCExecuteSql.SendExecuteRequest(OracleConnectionImpl commImpl, Byte[] sqlStmtByteStream, Boolean bHasReturningClause, Int32 cursorId, Int64 dbChangeRegistrationId, ColumnDescribeInfo[] columnDefines, Int64 noOfRowsToFetch, Boolean parse, Boolean execute, Boolean fetch, Boolean define, Boolean bAutoCommit, Boolean bDisableCompressedFetch, SqlStatementType stmtType, Int32 longFetchSize, Int32 arrayBindCount, Int64[] scnForSnapshot, MarshalBindParameterValueHelper& marshalBindParamsHelper, Int32 startIndex)
+   en OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   en Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   en Oracle.ManagedDataAccess.Client.OracleDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   en ORM.Formas.frmConsulta.VerEjecuciones() 
+==================================================
+ TargetSite : Void HandleError(OracleInternal.Common.OracleTraceLevel, OracleInternal.Common.OracleTraceTag, System.Exception, Oracle.ManagedDataAccess.Client.OracleLogicalTransaction) 
+************************************************
+ Finished Writting Exception info :1 
+************************************************
+************************************************
+
+
+
+
+************************************************
+************************************************
+ Inner Exception : No.2 
+************************************************
+==================================================
+ Error Message : Se ha encontrado un error ORA-12571 de Oracle 
+==================================================
+==================================================
+ Data parameters Count at Source :0
+==================================================
+==================================================
+ Source : Oracle.ManagedDataAccess 
+==================================================
+ StackTrace :    en OracleInternal.Network.TcpTransportAdapter.Send(OraBuf OB)
+   en OracleInternal.Network.WriterStream.Write(OraBuf OB)
+   en OracleInternal.TTC.OraBufWriter.FlushData()
+   en OracleInternal.TTC.TTCExecuteSql.WriteOall8Message(Byte[] sqlStmtByteStream, Int32 cursorId, Int64 dbChangeRegistrationId, Int64 executeOptions, ColumnDescribeInfo[] colDefinesInfoArray, Int32 longFetchSize, Int32 arrayBindCount, Int32 numDefineCols, Int64 noOfRowsToFetch, SqlStatementType stmtType, MarshalBindParameterValueHelper& marshalBindParamsHelper, Int32 startIndex) 
+==================================================
+ TargetSite : Void Send(OracleInternal.Network.OraBuf) 
+************************************************
+ Finished Writting Exception info :2 
+************************************************
+************************************************
+
+
+
+
+************************************************
+************************************************
+ Inner Exception : No.3 
+************************************************
+==================================================
+ Error Message : Se ha forzado la interrupción de una conexión existente por el host remoto 
+==================================================
+==================================================
+ Data parameters Count at Source :0
+==================================================
+==================================================
+ Source : Oracle.ManagedDataAccess 
+==================================================
+ StackTrace :    en OracleInternal.Network.TcpTransportAdapter.Send(OraBuf OB) 
+==================================================
+ TargetSite : Void Send(OracleInternal.Network.OraBuf) 
+************************************************
+ Finished Writting Exception info :3 
+************************************************
+************************************************
+
+
+14/09/2024 12:10:17 p. m. 
+----------------------------------------------------------
+Machine Name: L-CRUZ-J
+   User Name: JoseDanielCruzPerdom
+----------------------------------------------------------
+Mensaje de Error: Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder 
+Origen: Oracle.ManagedDataAccess [ReadIt en Oracle.ManagedDataAccess.dll]
+
+Excepción
+-----------------------------------------------------------------
+System.Net.Sockets.SocketException (0x80004005): Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder
+   en OracleInternal.Network.ReaderStream.ReadIt(OraBuf OB, Int32 len)
+
+
+
+************************************************
+************************************************
+ Inner Exception : No.1 
+************************************************
+==================================================
+ Error Message : Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder 
+==================================================
+==================================================
+ Data parameters Count at Source :0
+==================================================
+==================================================
+ Source : Oracle.ManagedDataAccess 
+==================================================
+ StackTrace :    en OracleInternal.Network.ReaderStream.ReadIt(OraBuf OB, Int32 len) 
+==================================================
+ TargetSite : Void ReadIt(OracleInternal.Network.OraBuf, Int32) 
+************************************************
+ Finished Writting Exception info :1 
+************************************************
+************************************************
+
+

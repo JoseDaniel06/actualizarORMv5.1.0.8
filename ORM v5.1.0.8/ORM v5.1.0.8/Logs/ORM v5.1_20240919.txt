@@ -1,0 +1,76 @@
+19/09/2024 12:03:23 p. m. 
+----------------------------------------------------------
+Machine Name: L-CRUZ-J
+   User Name: JoseDanielCruzPerdom
+----------------------------------------------------------
+Mensaje de Error: No se puede obtener acceso al objeto desechado.
+Nombre del objeto: 'frmPpalORM'. 
+Origen: System.Windows.Forms [CreateHandle en System.Windows.Forms.dll]
+
+Excepción
+-----------------------------------------------------------------
+System.ObjectDisposedException: No se puede obtener acceso al objeto desechado.
+Nombre del objeto: 'frmPpalORM'.
+   en System.Windows.Forms.Control.CreateHandle()
+   en System.Windows.Forms.Form.CreateHandle()
+   en DevExpress.XtraEditors.XtraForm.CreateHandle()
+   en System.Windows.Forms.Control.get_Handle()
+   en System.Windows.Forms.Control.GetSafeHandle(IWin32Window window)
+   en System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   en ORM.Formas.frmPpalORM.ValidateUserLogin()
+   en ORM.Formas.frmPpalORM.ValidarLogin()
+   en ORM.Formas.frmPpalORM.frmPpalORM_Load(Object sender, EventArgs e)
+   en System.Windows.Forms.Form.OnLoad(EventArgs e)
+   en DevExpress.XtraEditors.XtraForm.OnLoad(EventArgs e)
+   en System.Windows.Forms.Form.OnCreateControl()
+   en System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   en System.Windows.Forms.Control.CreateControl()
+   en System.Windows.Forms.Control.WmShowWindow(Message& m)
+   en System.Windows.Forms.Control.WndProc(Message& m)
+   en System.Windows.Forms.Form.WmShowWindow(Message& m)
+   en DevExpress.XtraEditors.XtraForm.WndProc(Message& msg)
+   en System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+
+
+************************************************
+************************************************
+ Inner Exception : No.1 
+************************************************
+==================================================
+ Error Message : No se puede obtener acceso al objeto desechado.
+Nombre del objeto: 'frmPpalORM'. 
+==================================================
+==================================================
+ Data parameters Count at Source :0
+==================================================
+==================================================
+ Source : System.Windows.Forms 
+==================================================
+ StackTrace :    en System.Windows.Forms.Control.CreateHandle()
+   en System.Windows.Forms.Form.CreateHandle()
+   en DevExpress.XtraEditors.XtraForm.CreateHandle()
+   en System.Windows.Forms.Control.get_Handle()
+   en System.Windows.Forms.Control.GetSafeHandle(IWin32Window window)
+   en System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   en ORM.Formas.frmPpalORM.ValidateUserLogin()
+   en ORM.Formas.frmPpalORM.ValidarLogin()
+   en ORM.Formas.frmPpalORM.frmPpalORM_Load(Object sender, EventArgs e)
+   en System.Windows.Forms.Form.OnLoad(EventArgs e)
+   en DevExpress.XtraEditors.XtraForm.OnLoad(EventArgs e)
+   en System.Windows.Forms.Form.OnCreateControl()
+   en System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   en System.Windows.Forms.Control.CreateControl()
+   en System.Windows.Forms.Control.WmShowWindow(Message& m)
+   en System.Windows.Forms.Control.WndProc(Message& m)
+   en System.Windows.Forms.Form.WmShowWindow(Message& m)
+   en DevExpress.XtraEditors.XtraForm.WndProc(Message& msg)
+   en System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam) 
+==================================================
+ TargetSite : Void CreateHandle() 
+************************************************
+ Finished Writting Exception info :1 
+************************************************
+************************************************
+
+

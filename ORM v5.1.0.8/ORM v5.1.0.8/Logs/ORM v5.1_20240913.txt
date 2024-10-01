@@ -1,0 +1,69 @@
+13/09/2024 4:00:29 p. m. 
+----------------------------------------------------------
+Machine Name: L-CRUZ-J
+   User Name: JoseDanielCruzPerdom
+----------------------------------------------------------
+Mensaje de Error: ORA-02289: no existe la secuencia 
+Origen: Oracle Data Provider for .NET, Managed Driver [ExecuteScalar en ORM.exe]
+
+Excepción
+-----------------------------------------------------------------
+Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-02289: no existe la secuencia
+   en DAL.DBHelper.ExecuteScalar(CommandType cmdType, String cmdText)
+   en ORM.Formas.frmConexiones.btnNueva_ItemClick(Object sender, ItemClickEventArgs e)
+   en DevExpress.XtraBars.BarItem.OnClick(BarItemLink link)
+   en DevExpress.XtraBars.BarButtonItem.OnClick(BarItemLink link)
+   en DevExpress.XtraBars.BarItemLink.OnLinkClick()
+   en DevExpress.XtraBars.BarButtonItemLink.OnLinkAction(BarLinkAction action, Object actionArgs)
+   en DevExpress.XtraBars.ViewInfo.BarSelectionInfo.ClickLink(BarItemLink link)
+   en DevExpress.XtraBars.ViewInfo.BarSelectionInfo.UnPressLink(BarItemLink link)
+   en DevExpress.XtraBars.Ribbon.Handler.BaseRibbonHandler.OnUnPressItem(DXMouseEventArgs e, RibbonHitInfo hitInfo)
+   en DevExpress.XtraBars.Ribbon.Handler.BaseRibbonHandler.OnMouseUp(DXMouseEventArgs e)
+   en DevExpress.XtraBars.Ribbon.Handler.RibbonHandler.OnMouseUp(DXMouseEventArgs e)
+   en DevExpress.XtraBars.Ribbon.RibbonControl.OnMouseUp(MouseEventArgs e)
+   en System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   en System.Windows.Forms.Control.WndProc(Message& m)
+   en DevExpress.Utils.Controls.ControlBase.BaseWndProc(Message& m)
+   en DevExpress.XtraBars.Ribbon.RibbonControl.WndProc(Message& m)
+   en System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+
+
+************************************************
+************************************************
+ Inner Exception : No.1 
+************************************************
+==================================================
+ Error Message : ORA-02289: no existe la secuencia 
+==================================================
+==================================================
+ Data parameters Count at Source :0
+==================================================
+==================================================
+ Source : Oracle Data Provider for .NET, Managed Driver 
+==================================================
+ StackTrace :    en DAL.DBHelper.ExecuteScalar(CommandType cmdType, String cmdText)
+   en ORM.Formas.frmConexiones.btnNueva_ItemClick(Object sender, ItemClickEventArgs e)
+   en DevExpress.XtraBars.BarItem.OnClick(BarItemLink link)
+   en DevExpress.XtraBars.BarButtonItem.OnClick(BarItemLink link)
+   en DevExpress.XtraBars.BarItemLink.OnLinkClick()
+   en DevExpress.XtraBars.BarButtonItemLink.OnLinkAction(BarLinkAction action, Object actionArgs)
+   en DevExpress.XtraBars.ViewInfo.BarSelectionInfo.ClickLink(BarItemLink link)
+   en DevExpress.XtraBars.ViewInfo.BarSelectionInfo.UnPressLink(BarItemLink link)
+   en DevExpress.XtraBars.Ribbon.Handler.BaseRibbonHandler.OnUnPressItem(DXMouseEventArgs e, RibbonHitInfo hitInfo)
+   en DevExpress.XtraBars.Ribbon.Handler.BaseRibbonHandler.OnMouseUp(DXMouseEventArgs e)
+   en DevExpress.XtraBars.Ribbon.Handler.RibbonHandler.OnMouseUp(DXMouseEventArgs e)
+   en DevExpress.XtraBars.Ribbon.RibbonControl.OnMouseUp(MouseEventArgs e)
+   en System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   en System.Windows.Forms.Control.WndProc(Message& m)
+   en DevExpress.Utils.Controls.ControlBase.BaseWndProc(Message& m)
+   en DevExpress.XtraBars.Ribbon.RibbonControl.WndProc(Message& m)
+   en System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam) 
+==================================================
+ TargetSite : System.Object ExecuteScalar(System.Data.CommandType, System.String) 
+************************************************
+ Finished Writting Exception info :1 
+************************************************
+************************************************
+
+

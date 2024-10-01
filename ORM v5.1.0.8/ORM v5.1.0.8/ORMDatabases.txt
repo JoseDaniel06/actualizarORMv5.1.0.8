@@ -1,0 +1,17 @@
+# Every line that begins with # is a comment line
+#
+# Create Oracle aliases for each database server you need to connect to.
+#
+# Sample entry
+#
+# <data source alias>=<hostname or IP>:<port>/<database service name or SID>
+#
+# <data source alias> = Name to use in the connection string Data Source
+# <hostname or IP> = name or IP of the database server machine
+# <port> = database server machine port to use
+# <database service name> = name of the database service on the server
+#
+# Example:
+# MyLocalXE=localhost:1521/XE
+
+

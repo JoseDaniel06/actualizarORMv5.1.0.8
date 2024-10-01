@@ -1,0 +1,8 @@
+<SyntaxModes version="1.0">
+	<Mode file       = "OSQL.xshd"
+	      name       = "ORACLESQL"
+	      extensions = ".sql"/>
+	<Mode file       = "SQL.xshd"
+	      name       = "SQL"
+	      extensions = ".sql"/>		  
+</SyntaxModes>
