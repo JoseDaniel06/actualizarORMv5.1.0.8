@@ -1,5 +1,13 @@
 # Instalación ORM v5.1.0.8
 Como primer paso se debe descargar el archivo ORMv5_8.zip
+------------------------------------------------------------
+Para descargarlo primero se debe dar clic en el icono Tags
+![alt text](image.png)
+
+Luego se debe dar clic
+![alt text](image-6.png)
+
+Así mismo iniciara la descarga
 
 # Base instalada versiones anteriores ORM
 Sí actualmente cuenta con algunas de las versiones de ORM, el proceso es el siguiente:
