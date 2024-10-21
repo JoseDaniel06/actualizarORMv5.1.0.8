@@ -1,4 +1,6 @@
-# InstalaciÛn ORM v5.1.0.8
+# Novedades versi√≥n 5.1.0.8
+Se realiza un ajuste en las propiedades del apartado 'Tabla Din√°mica' al exportar componente pivot para que no incluya obligatoriamente los campos no utilizados.
+# Instalaci√≥n ORM v5.1.0.8
 Como primer paso se debe descargar el archivo ORMv5_8.zip
 ------------------------------------------------------------
 Para descargarlo primero se debe dar clic en el icono Tags
@@ -7,10 +9,10 @@ Para descargarlo primero se debe dar clic en el icono Tags
 Luego se debe dar clic
 ![alt text](image-6.png)
 
-AsÌ mismo iniciara la descarga
+As√≠ mismo iniciara la descarga
 
 # Base instalada versiones anteriores ORM
-SÌ actualmente cuenta con algunas de las versiones de ORM, el proceso es el siguiente:
+S√≠ actualmente cuenta con algunas de las versiones de ORM, el proceso es el siguiente:
     Debe copiar los siguientes archivos:
 * ORM.ini
 * ORMDatabases.txt
@@ -18,7 +20,7 @@ SÌ actualmente cuenta con algunas de las versiones de ORM, el proceso es el sigu
     De la carpeta actual donde se encuentra instalado su ORM.
     ![alt text](image-1.png)
 
-    Posterior debera pegarlos en la carpeta de la nueva versiÛn ORMv5_8 y dar clic en **REEMPLAZAR**
+    Posterior debera pegarlos en la carpeta de la nueva versi√≥n ORMv5_8 y dar clic en **REEMPLAZAR**
     
     ![alt text](image-2.png)
 
@@ -34,6 +36,6 @@ SÌ actualmente cuenta con algunas de las versiones de ORM, el proceso es el sigu
 
    ![alt text](image-4.png) 
 
-   Para validar la versiÛn de ORM desde esta pantalla se debe dar doble clic en el icono:
+   Para validar la versi√≥n de ORM desde esta pantalla se debe dar doble clic en el icono:
 
    ![alt text](image-5.png)
